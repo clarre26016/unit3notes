@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Updated Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+<div class="container">
+    <div class="content">
+        <p> Lorem ipsum dolor
+            sit amet, consectetur
+            adipiscing elit, sed
+            do eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua.
+            Integer malesuada nunc
+            vel risus commodo viverra
+            maecenas. Lacus suspendisse
+            faucibus interdum posuere
+            lorem ipsum dolor sit.
+            Ultrices in iaculis nunc
+            sed. Turpis tincidunt id
+            aliquet risus feugiat in
+            ante. Etiam tempor orci eu
+            lobortis elementum nibh
+            tellus molestie nunc.
+            Pellentesque id nibh tortor
+            id. Suspendisse potenti
+            nullam ac tortor vitae purus
+            faucibus. Egestas integer
+            eget aliquet nibh praesent
+            tristique magna sit amet.
+            Sed sed risus pretium quam
+            vulputate dignissim suspendisse.
+            Dignissim cras tincidunt
+            lobortis feugiat vivamus at augue
+            eget. Donec ac odio tempor orci
+            dapibus ultrices in iaculis.
+            Venenatis cras sed felis eget
+            velit aliquet sagittis id
+            consectetur. Massa vitae tortor
+            condimentum lacinia. Quisque egestas
+            diam in arcu cursus euismod.
+            Ullamcorper a lacus vestibulum sed
+            arcu non odio euismod lacinia.
+            Et molestie ac feugiat sed lectus
+            vestibulum. Malesuada fames ac
+            turpis egestas.</p>
+        <div class="row">
+            <h3>Background</h3>
+            <input type="color" id="bg" value="#FFFFFF">
+        </div>
+        <div class="row">
+            <h3>Text</h3>
+            <input type="color" id="txt" value="#000000">
+        </div>
+        <button id="clear">Clear</button>
+    </div>
+</div>
+<script>
+    const content = document.querySelector('.content');
+    const bg = document.getElementById('bg');
+    const txt = document.getElementById('txt');
+    const clear = document.getElementById('clear');
+    bg.addEventListener('change', function(e){
+        content.style.backgroundColor = e.target.value;
+    });
+    txt.addEventListener('change',function(e){
+        content.style.color = e.target.value;
+    });
+    clear.addEventListener('click',function(e){
+        content.style.backgroundColor= 'white';
+        bg.value = '#FFFFFF';
+        content.style.color= 'black';
+        txt.value = '#000000';
+    });
+</body>
+</html>
+
