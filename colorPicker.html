@@ -14,6 +14,16 @@
         .blue{
             background-color:blue;
         }
+
+        .grey{
+            background-color:grey;
+        }
+        .peru{
+            background-color:peru;
+        }
+        .tan{
+            background-color:tan;
+        }
         .pink{
             color:pink;
         }
@@ -22,6 +32,18 @@
         }
         .purple{
             color:purple;
+        }
+
+        .yellow{
+            color:yellow;
+        }
+
+        .orange{
+            color:orange;
+        }
+
+        .tomato{
+            color:tomato;
         }
     </style>
 </head>
@@ -75,9 +97,21 @@
         </div>
         <div class="row">
             <h3>Text</h3>
-            <button id="4">PINK</button>
-            <button id="5">TEAL</button>
-            <button id="6">PURPLE</button>
+            <button id="4">GREY</button>
+            <button id="5">PERU</button>
+            <button id="6">TAN</button>
+        </div>
+        <div class="row">
+            <h3>Text</h3>
+            <button id="7">PINK</button>
+            <button id="8">TEAL</button>
+            <button id="9">PURPLE</button>
+        </div>
+        <div class="row">
+            <h3>Text</h3>
+            <button id="10">YELLOW</button>
+            <button id="11">ORANGE</button>
+            <button id="12">TOMATO</button>
         </div>
         <button id="clear">CLEAR</button>
     </div>
@@ -88,9 +122,18 @@
     const green = document.getElementById('2');
     const blue = document.getElementById('3');
 
-    const pink = document.getElementById('4');
-    const teal = document.getElementById('5');
-    const purple = document.getElementById('6');
+    const grey = document.getElementById('4');
+    const peru = document.getElementById('5');
+    const tan = document.getElementById('6');
+
+    const pink = document.getElementById('7');
+    const teal = document.getElementById('8');
+    const purple = document.getElementById('9');
+
+    const yellow = document.getElementById('10');
+    const orange = document.getElementById('11');
+    const tomato = document.getElementById('12');
+
 
     const clearButton = document.getElementById('clear');
 
@@ -109,6 +152,20 @@
         content.classList.add('blue');
     });
 
+    grey.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('grey');
+    });
+
+    peru.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('peru');
+    });
+    tan.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('tan');
+    });
+
     pink.addEventListener('click', function(e){
         removeTextColor();
         content.classList.add('pink');
@@ -124,16 +181,36 @@
         content.classList.add('purple');
     });
 
+    yellow.addEventListener('click', function(e){
+        removeTextColor();
+        content.classList.add('yellow');
+    });
+
+   orange.addEventListener('click', function(e){
+        removeTextColor();
+        content.classList.add('orange');
+    });
+
+    tomato.addEventListener('click', function(e){
+        removeTextColor();
+        content.classList.add('tomato');
+    });
     function removeBGColor(){
         content.classList.remove('red');
         content.classList.remove('green');
         content.classList.remove('blue');
+        content.classList.remove('grey');
+        content.classList.remove('peru');
+        content.classList.remove('tan');
     }
 
     function removeTextColor(){
         content.classList.remove('pink');
         content.classList.remove('teal');
         content.classList.remove('purple');
+        content.classList.remove('yellow');
+        content.classList.remove('orange');
+        content.classList.remove('tomato');
     }
 
     clearButton.addEventListener('click', function(e){
