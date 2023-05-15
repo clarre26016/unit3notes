@@ -55,5 +55,26 @@
         full.textContent = "";
     });
 </script>
+<div>
+    <label for="List">Grocery list</label>
+    <input type="text" id="list" name="List" placeholder="item">
+</div>
+<script>
+    const list = document.createElement('eggs')
+    list.innerHTML = '<h1>Grocery List</h1>';
+    const myList = document.querySelector('ul');
+
+    function addItem(){
+
+        let milk = document.createElement('li');
+        newElement.addEventListener('click', function(e){
+            let list = List.value;
+        });
+        myList.appendChild(milk)
+
+    }
+    addButton.addEventListener('click', addItem);
+
+</script>
 </body>
 </html>

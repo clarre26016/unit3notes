@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="223b1d14-1747-421c-8a23-b30fc2cecc4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/insertProject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/textInput.html" afterDir="false" />
+    <list default="true" id="223b1d14-1747-421c-8a23-b30fc2cecc4c" name="Changes" comment="adding text inputs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textInput.html" beforeDir="false" afterPath="$PROJECT_DIR$/textInput.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +43,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684189720941</updated>
-      <workItem from="1684189722288" duration="1758000" />
+      <workItem from="1684189722288" duration="3504000" />
     </task>
+    <task id="LOCAL-00001" summary="adding text inputs">
+      <created>1684191581532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684191581532</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adding text inputs">
+      <created>1684191636834</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684191636834</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,5 +75,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding text inputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding text inputs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/insertProject.html</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
